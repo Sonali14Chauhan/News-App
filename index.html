@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News-App</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="news-logo">
+                <img src="./assets/news-icon.png" alt="news-icon" onclick="reload()">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="links-hover" id="sports" onclick="onNavClick('sports')">Sports</li>
+                    <li class="links-hover" id="finance" onclick="onNavClick('finance')">Finance</li>
+                    <li class="links-hover" id="politics" onclick="onNavClick('politics')">Politics</li>
+                    <li class="links-hover" id="technology" onclick="onNavClick('technology')">Technology</li>
+                    <li class="links-hover" id="entertainment" onclick="onNavClick('entertainment')">Entertainment</li>
+                    <li class="links-hover" id="international" onclick="onNavClick('international')">International</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="search-text" id="search-text" placeholder="eg. Space" >
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="card-container container flex" id="card-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="cards">
+            <div class="card-header">
+                <img id="news-img" src="https://via.placeholder.com/400x200" alt="news-image">
+            </div>
+            <div class="card-content">
+                <h2 id="news-title"> This is title</h2>
+                <h5 id="news-source">publish by 7/20/23</h5>
+                <p id="news-desc">Lorem ipsum, dolor sit amet co nsectetur adipisicing elit. Vero optio eius libero
+                    obcaecati minus sunt rem doloremque quisquam! Adipisci, nemo et explicabo vel expedita magnam minus
+                    magni. Mollitia, sed corrupti!</p>
+                </div>
+            </div>
+        </template>
+        
+        <!-- footer -->
+        <footer >
+            <div class=" container footer-container flex ">
+                <ul class="flex footer-links">
+                    <li><a  href="#"><i class="fa-brands fa-instagram icon fa-2x"></i></a></li>
+                    <li><a  href="#"><i class="fa-brands fa-facebook icon fa-2x"></i></a></li>
+                    <li><a  href="#"><i class="fa-brands fa-twitter icon fa-2x"></i></a> </li>
+                    <!-- <li><a  href="#"><i class="fa-brands fa-facebook icon fa-2x"></i></a></li> -->
+                </ul> 
+                <h5 class="footer-desc">All Copyright &copy; Reserved</h5>
+        </div>
+        
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/14ab85665d.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
